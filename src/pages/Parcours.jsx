@@ -5,10 +5,12 @@ import background_labo from '../assets/parcours/background_labo.jpg';
 import background_parcours from '../assets/parcours/background_parcours.jpg';
 import background_mao from '../assets/parcours/background_mao.jpg';
 import background_groupe from '../assets/parcours/background_groupe.jpg';
+import PageLayout from '../components/PageLayout';
 
 export default function Parcours() {
     return (
         <main className="parcours">
+            <PageLayout>
             <h1>Les parcours Milles et une notes</h1>
             <p className="parcours__description">
                 La musique est un art et une activité culturelle consistant à combiner sons et silences au cours du temps. Les composantes principales sont le rythme, l'harmonie, les nuances et le timbre. Elle est aujourd'hui considérée comme une forme de poésie moderne.
@@ -50,6 +52,7 @@ export default function Parcours() {
                     subtitle="Durée variable selon l'ensemble"
                 />
             </div>
+            </PageLayout>
         </main>
     )
 };

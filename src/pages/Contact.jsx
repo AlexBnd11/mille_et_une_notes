@@ -3,10 +3,12 @@ import phone from '../assets/icon_phone.png';
 import email from '../assets/icon_email.png';
 import location from '../assets/icon_location.svg';
 import tableau_tarifs from '../assets/tarifs-tableau.png';
+import PageLayout from '../components/PageLayout';
 
 export default function Contact() {
     return (
         <main className="contact-tarifs">
+            <PageLayout>
             <h1>Contact & tarifs</h1>
             <section className="contact-tarifs__contact">
                 <div className="contact-tarifs__contact__left">
@@ -59,7 +61,8 @@ export default function Contact() {
                     <div className="contact-tarifs__tarifs__right">
                             <img src={tableau_tarifs} alt="tarifs" />
                     </div>
-            </section>
+                </section>
+            </PageLayout>
         </main>
     )
 }

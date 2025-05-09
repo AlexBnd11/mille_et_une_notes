@@ -32,3 +32,30 @@ h1 {
 p {
     color: #333;
 }
+
+/* Animation de fondu du bas vers le haut */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Classe pour les éléments animés avec keyframes (alternative) */
+.fade-in-up {
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+/* Délais pour l'animation keyframes */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+
+
+

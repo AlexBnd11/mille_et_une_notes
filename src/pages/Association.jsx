@@ -1,9 +1,11 @@
 import Tourtillere from '../assets/tourtillere.png';
 import './Association.scss';
+import PageLayout from '../components/PageLayout';
 
 export default function Association() {
     return (
-        <main className="association">
+        <main className="association">     
+            <PageLayout>
             <h1>Une association avant tout</h1>
             <div className="association__content_1">
                 <img src={Tourtillere} alt="Château de la Tourtillere" />
@@ -37,6 +39,7 @@ export default function Association() {
                     <a href="">Règlement intérieur</a>
                 </div>
             </div>
+            </PageLayout>
         </main>
     )
 }

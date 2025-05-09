@@ -12,10 +12,12 @@ import backgroundNotes2 from '../assets/background_notes_2.png';
 import phone from '../assets/icon_phone.png';
 import email from '../assets/icon_email.png';
 import event from '../assets/school_logo.png';
+import PageLayout from '../components/PageLayout';
 
 export default function Accueil() {
     return (
         <main>
+            <PageLayout>
             <div className="hero-section">
                 <AnimatedGrid />
                 <h1>Mille et une notes <br /> École de musique de Puilboreau</h1>
@@ -101,6 +103,7 @@ export default function Accueil() {
                     </div>
                 </div>
             </section>
+            </PageLayout>
         </main>
     )
 };
