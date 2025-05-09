@@ -1,0 +1,226 @@
+.hero-section {
+    position: relative;
+    h1 {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 600;
+        margin : 5rem 2rem;
+        pointer-events: none;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 220%;
+            background: radial-gradient(ellipse at center, rgba(216, 188, 94, 0.2) 0%, rgba(248, 155, 9, 0.1) 60%, rgba(255,255,255,0) 90%);
+            z-index: -1;
+            border-radius: 50%;
+            filter: blur(25px);
+            pointer-events: none;
+          }
+
+        @media (max-width: 1200px) {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+        }
+
+        @media (max-width: 350px) {
+            font-size: 2.4rem;
+        }
+    }
+
+    address {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        font-size: 1.3rem;
+        font-style: normal;
+        line-height: 1.3;
+        pointer-events: none;
+        color: #333;
+            
+        @media (max-width: 1200px) {
+            font-size: 1rem;
+        }
+    }
+
+    .hero-section__notes_1 {
+        position: absolute;
+        top: -20%;
+        left: 73%;
+        width: 200px;
+        z-index: -5;
+
+        @media (max-width: 1200px) {
+            width: 150px;
+            top: -25%;
+            left: 80%;
+        }
+    }
+
+    .hero-section__notes_2 {
+        position: absolute;
+        top: 54%;
+        left: 15%;
+        width: 50px;
+        z-index: -5;
+
+        @media (max-width: 1200px) {
+            width: 150px;
+        }
+    }
+}
+
+.accueil__squares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.7rem;
+    max-width: 1400px;
+    margin: 9rem auto 3rem auto;
+
+    @media (max-width: 1200px) {
+        margin: 5rem auto 3rem auto;
+    }
+
+    @media (max-width: 768px) {
+        margin: 3rem auto 3rem auto;
+    }
+}
+
+.accueil__contact {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+
+    a {
+        text-decoration: none;
+        color: #333;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #774C21;
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+
+    &-phone {
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+        font-size: 1.2rem;
+
+        img {
+            width: 2.3rem;
+        }
+    }  
+
+    &-email {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.2rem;
+        
+        img {
+            width: 2.5rem;
+        }
+
+        @media (max-width: 430px) {
+            font-size: 0.95rem;
+            gap: 0.84rem;
+        }  
+    }
+}
+
+.accueil__event {
+    gap: 2rem;
+    margin: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &-content {
+        height: 300px;
+        max-width: 1400px;
+        width: 100%;
+        border-radius: 50px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+        margin: 0 3rem;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            height: 500px;
+        }
+
+
+        img {
+            width: 45%;
+            height: 100%;
+            object-fit: cover;
+
+            @media (max-width: 1024px) {
+                height: 60%;
+                width: 100%;
+            }
+        }
+
+        &-text {
+            width: 55%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            @media (max-width: 1024px) {
+                width: 100%;
+                height: 40%;
+            }
+
+            p {
+                font-size: 2rem;
+
+                @media (max-width: 1024px) {
+                    font-size: 1.8rem;
+                }
+
+                @media (max-width: 500px) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            h3 {
+                font-size: 3rem;
+                font-weight: 600;
+
+                @media (max-width: 1024px) {
+                    font-size: 2.3rem;
+                }
+
+                @media (max-width: 500px) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}

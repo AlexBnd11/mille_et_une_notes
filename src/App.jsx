@@ -3,6 +3,9 @@ import './App.scss';
 
 // Pages
 import Accueil from './pages/Accueil';
+import Association from './pages/Association';
+import Parcours from './pages/Parcours';
+import Contact from './pages/Contact';
 
 // Components
 import Nav from './components/Nav';
@@ -14,6 +17,9 @@ export default function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Accueil />} />
+          <Route path="/association" element={<Association />} />
+          <Route path="/parcours" element={<Parcours />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </BrowserRouter>

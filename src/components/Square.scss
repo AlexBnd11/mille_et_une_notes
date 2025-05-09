@@ -1,0 +1,47 @@
+.square {
+    position: relative;
+    width: 360px;
+    height: 350px;
+    border-radius: 50px;
+    padding: 1.8rem;
+    margin: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(119, 76, 33, 0.2);
+
+    @media (max-width: 400px) {
+        width: 295px;
+        height: 295px;
+    }
+
+    &:hover {
+        span {
+            color: white;
+        }
+
+        img {
+            transform: scale(1.15);
+            rotate: -10deg;
+        }
+    }
+
+    span {
+        color: #FBFBF8;
+        font-size: 1.7rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        transition: color 0.3s ease;
+        display: block;
+        max-width: 62%;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    img {
+        position: absolute;
+        transition: all 0.6s ease;
+    }
+}

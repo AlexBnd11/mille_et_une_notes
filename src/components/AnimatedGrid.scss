@@ -1,0 +1,60 @@
+.animated-grid {
+  position: absolute;
+  left: 0;
+  top: -120px;
+  width: 97%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  z-index: 1;
+  pointer-events: all;
+}
+
+.grid-cell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  
+  &.active {
+    z-index: 1;
+  }
+}
+
+.grid-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  transform: translate(calc(-50% - 20px), calc(-50% + 100px));
+}
+
+.grid-image.active {
+  animation: pop-effect 0.8s ease-out forwards;
+}
+
+@keyframes pop-effect {
+  0% {
+    opacity: 0;
+    transform: translate(calc(-50% - 20px), calc(-50% + 100px)) scale(0);
+  }
+  30% {
+    opacity: 0.9;
+    transform: translate(calc(-50% - 20px), calc(-50% + 100px)) scale(1.1);
+  }
+  50% {
+    transform: translate(calc(-50% - 20px), calc(-50% + 100px)) scale(1);
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% - 20px), calc(-50% + 100px)) scale(0);
+  }
+} 
