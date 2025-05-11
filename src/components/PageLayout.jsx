@@ -9,7 +9,7 @@ export default function PageLayout({ children }) {
       if (!child) return child;
       
       // Calculer le délai en fonction de l'index
-      const delay = index * 0.15;
+      const delay = index * 0.1;
       
       // Envelopper chaque enfant dans AnimateOnScroll
       return (

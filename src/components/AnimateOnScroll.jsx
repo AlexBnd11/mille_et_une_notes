@@ -4,7 +4,7 @@ export default function AnimateOnScroll({
   children, 
   delay = 0, 
   className = '',
-  duration = 0.6,
+  duration = 0.5,
   distance = 30
 }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,7 +18,7 @@ export default function AnimateOnScroll({
       const rect = elementRef.current.getBoundingClientRect();
       // Modifier cette valeur pour déclencher l'animation plus tôt
       // 0.95 signifie que l'élément commence à s'animer quand il est à 95% de la hauteur de la fenêtre
-      const isInView = rect.top <= window.innerHeight * 0.95;
+      const isInView = rect.top <= window.innerHeight * 0.97;
       
       if (isInView && !isVisible) {
         setIsVisible(true);
