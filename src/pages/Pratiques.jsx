@@ -11,11 +11,11 @@ export default function Pratiques() {
                 <h1>Découvrez les pratiques musicales de l'école</h1>
                 <div className="pratiques__container">
                     <div className="pratiques__photos">
-                        <img src={BackgroundInstruments} alt="Instruments" />
+                        <img src={BackgroundInstruments2} alt="Instruments" />
                         <div className="pratiques__photos-paysage">
                             <img src={BackgroundPaysage} alt="Paysage" />
                         </div>
-                        <img src={BackgroundInstruments2} alt="Instruments" />
+                        <img src={BackgroundInstruments} alt="Instruments" />
                     </div>
                     <section className="pratiques__instruments">
                         <h2>Les instruments</h2>
