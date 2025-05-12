@@ -1,5 +1,5 @@
 .pratiques {
-    margin: 4rem;
+    margin: 0 4rem;
     background-color: #000;
     border-radius: 30px;
 
@@ -21,6 +21,7 @@
         display: flex;
         gap: 2rem;
         justify-content: center;
+        margin-bottom: 3rem;
 
         img {
             width: 20%;
@@ -42,21 +43,20 @@
 
     section {
         width: 100%;
-        margin-bottom: 3rem;
         border-radius: 30px;
         color: #fff;
-        padding: 3rem;
+        padding: 0 3rem 3rem 3rem;
 
         h2 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: 600;
             margin-bottom: 2.5rem;
             text-align: center;
         }
 
         ul {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             list-style-position: inside;
 
@@ -64,14 +64,8 @@
                 font-size: 1.2rem;
                 font-weight: 400;
                 border-radius: 20px;
-                padding: 1rem;
+                padding: 0.6rem;
             }
         }
-    }
-
-    &__instruments {
-    }
-
-    &__collectives {
     }
 }

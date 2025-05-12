@@ -1,24 +1,107 @@
 footer {
     position: relative;
-    background-color: #774C21;
+    background-color: #faa907;
     color: #fff;
     padding: 2rem 0;
-    height: 120px;
+    margin-top: 5rem;
     display: flex;
-    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 6rem;
 
-    @media (max-width: 768px) {
-        margin-top: 4rem;
+    @media (max-width: 740px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer-content {
+    max-width: 40%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    @media (max-width: 740px) {
+        max-width: 100%;
+    }
+}
+
+.footer-title {
+    text-align: center;
+    
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    
+    .separator {
+        opacity: 0.5;
+    }
+}
+
+.footer-credits {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+
+    @media (max-width: 740px) {
+        margin-top: 0;
+        margin-bottom: 2rem;
     }
 
     p {
-        font-size: 1.1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        margin: 0 5rem;
-        color: #f8f8f8;
+        color: #fff;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #fff;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        &:hover::after {
+            transform: scaleX(1);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        
+        .separator {
+            display: none;
+        }
     }
 }

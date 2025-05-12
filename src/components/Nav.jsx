@@ -3,16 +3,13 @@ import './Nav.scss';
 import Logo from "../assets/school_logo.png";
 import IconMenu from "../assets/icon_menu.svg";
 import { useState, useEffect } from 'react';
+import Facebook from '../assets/icon_facebook.svg';
 
 export default function Nav() {
-    // État pour gérer l'ouverture/fermeture du menu mobile
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    // État pour gérer l'ouverture/fermeture du sous-menu dans la version mobile
     const [dropdownOpen, setDropdownOpen] = useState(false);
     
-
     const activeClass = ({ isActive }) => isActive ? "--active" : "";
-    
 
     const DownArrow = () => (
         <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" className="nav__dropdown-arrow">
@@ -82,7 +79,10 @@ export default function Nav() {
             </div>
             
             <div className="nav__socials">
-                <span>abonnez-vous !</span>
+                <a href="https://www.facebook.com/p/Mille-et-une-Notes-100069392753204/" target="_blank" rel="noopener noreferrer">
+                    <img src={Facebook} alt="Facebook" />
+                </a>
+                <span>rejoignez-nous !</span>
             </div>
             
             {/* Bouton hamburger pour mobile */}
@@ -137,7 +137,7 @@ export default function Nav() {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/pratiques-musicales" className={activeClass} onClick={handleLinkClick}>
+                                <NavLink to="/pratiques" className={activeClass} onClick={handleLinkClick}>
                                     Pratiques musicales
                                 </NavLink>
                             </li>
@@ -160,7 +160,10 @@ export default function Nav() {
                     </li>
                 </ul>
                 <div className="nav__mobile-socials">
-                    <span>abonnez-vous !</span>
+                    <a href="https://www.facebook.com/p/Mille-et-une-Notes-100069392753204/" target="_blank" rel="noopener noreferrer">
+                        <img src={Facebook} alt="Facebook" />
+                    </a>
+                    <span>rejoignez-nous !</span>
                 </div>
             </div>
             

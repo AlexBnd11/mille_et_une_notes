@@ -11,7 +11,7 @@ import backgroundNotes from '../assets/background_notes.png';
 import backgroundNotes2 from '../assets/background_notes_2.png';
 import phone from '../assets/icon_phone.png';
 import email from '../assets/icon_email.png';
-import event from '../assets/school_logo.png';
+import event from '../assets/fete_la-rochelle.jpeg';
 import PageLayout from '../components/PageLayout';
 
 export default function Accueil() {
