@@ -57,8 +57,8 @@
 
         @media (max-width: 1200px) {
             width: 150px;
-            top: -25%;
-            left: 80%;
+            top: -34%;
+            left: 53%;
         }
     }
 
@@ -70,7 +70,12 @@
         z-index: -5;
 
         @media (max-width: 1200px) {
-            width: 150px;
+            width: 55px;
+        }
+
+        @media (max-width: 400px) {
+            top: 60%;
+            left: 5%;
         }
     }
 }

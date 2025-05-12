@@ -1,0 +1,149 @@
+.studio {
+    margin: 6rem;
+
+    @media (max-width: 768px) {
+        margin: 2.5rem;
+
+        h1 {
+            margin: 3rem 0;
+            font-size: 2.6rem;
+        }
+    }
+
+    p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-align: justify;
+    }
+
+    &__cover {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-bottom: 2rem;
+
+        @media (max-width: 768px) {
+            height: 400px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__content__1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 5rem 0;
+
+        &__left {
+            width: 38%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+
+        &__right {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            iframe {
+                width: 100%;
+                max-width: 600px;
+                height: 500px;
+                border-radius: 30px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            gap: 4rem;
+            margin: 3rem 0;
+
+            &__left {
+                width: 100%;
+
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+
+            &__right {
+                width: 100%;
+            }
+        }
+        
+    }
+
+    &__content__2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5rem;
+        margin-top: 8rem;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
+
+        @media (max-width: 768px) {
+            margin-top: 4rem;
+            gap: 3rem;
+        }
+
+        &__left {
+            img {
+                border-radius: 30px;
+                width: 100%;
+            }
+        }
+        
+        &__right {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            
+            &__text {
+                h2 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+
+                &__p {
+                    color: #774C21;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.7rem;
+                    font-size: 1.05rem;
+                    text-align: left;
+                    margin-top: 1.5rem;
+
+                    @media (max-width: 500px) {
+                        font-size: 0.9rem;
+                    }
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+    
+                    a {
+                        color: #774C21;
+                        text-decoration: none;
+                        transition: color 0.3s ease;
+    
+                        &:hover {
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

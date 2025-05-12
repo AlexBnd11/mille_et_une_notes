@@ -9,6 +9,10 @@ footer {
     align-items: center;
     margin-top: 6rem;
 
+    @media (max-width: 768px) {
+        margin-top: 4rem;
+    }
+
     p {
         font-size: 1.1rem;
         font-weight: 400;
