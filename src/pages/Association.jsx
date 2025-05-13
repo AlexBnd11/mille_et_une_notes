@@ -1,9 +1,14 @@
 import Tourtillere from '../assets/tourtillere.png';
 import Tourtillere2 from '../assets/tourtillere_2.jpg';
+import { useEffect } from 'react';
 import './Association.scss';
 import PageLayout from '../components/PageLayout';
 
 export default function Association() {
+    useEffect(() => {
+        document.title = 'Association - Mille et une notes';
+    }, []);
+
     return (
         <main className="association">     
             <PageLayout>

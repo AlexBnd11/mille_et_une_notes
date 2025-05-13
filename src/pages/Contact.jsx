@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './Contact.scss';
 import phone from '../assets/icon_phone.png';
 import email from '../assets/icon_email.png';
@@ -6,6 +7,10 @@ import tableau_tarifs from '../assets/tarifs-tableau.png';
 import PageLayout from '../components/PageLayout';
 
 export default function Contact() {
+    useEffect(() => {
+        document.title = 'Contact - Mille et une notes';
+    }, []);
+
     return (
         <main className="contact-tarifs">
             <PageLayout>

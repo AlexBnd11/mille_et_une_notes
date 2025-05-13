@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './Parcours.scss';
 import Square_Parcours from '../components/Square_Parcours';
 import background_eveil from '../assets/parcours/background_eveil.jpg';
@@ -8,6 +9,10 @@ import background_groupe from '../assets/parcours/background_groupe.jpg';
 import PageLayout from '../components/PageLayout';
 
 export default function Parcours() {
+    useEffect(() => {
+        document.title = 'Parcours - Mille et une notes';
+    }, []);
+
     return (
         <main className="parcours">
             <PageLayout>

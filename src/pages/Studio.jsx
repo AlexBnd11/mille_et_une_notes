@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './Studio.scss';
 import PageLayout from '../components/PageLayout';
 import StudioPhoto from '../assets/studio_cover_exemple.jpg';
@@ -5,6 +6,10 @@ import StudioPhoto2 from '../assets/studio_2.jpg';
 import email from '../assets/icon_email.png';
 
 export default function Studio() {
+    useEffect(() => {
+        document.title = 'Studio - Mille et une notes';
+    }, []);
+
     return (
         <main className="studio">
             <PageLayout>

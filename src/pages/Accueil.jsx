@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './Accueil.scss';
 import Square from '../components/Square';
 import AnimatedGrid from '../components/AnimatedGrid';
@@ -15,6 +16,10 @@ import event from '../assets/fete_la-rochelle.jpeg';
 import PageLayout from '../components/PageLayout';
 
 export default function Accueil() {
+    useEffect(() => {
+        document.title = 'Accueil - Mille et une notes';
+    }, []);
+
     return (
         <main>
             <PageLayout>

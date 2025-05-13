@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './Pratiques.scss';
 import PageLayout from '../components/PageLayout';
 import BackgroundInstruments from '../assets/background_instruments_1.jpg';
@@ -5,6 +6,10 @@ import BackgroundInstruments2 from '../assets/background_instruments_2.jpg';
 import BackgroundPaysage from '../assets/background_instruments_paysage.jpg';
 
 export default function Pratiques() {
+    useEffect(() => {
+        document.title = 'Pratiques - Mille et une notes';
+    }, []);
+
     return (
         <main className="pratiques">
             <PageLayout>
