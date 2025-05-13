@@ -137,7 +137,7 @@ export default function Nav() {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/pratiques" className={activeClass} onClick={handleLinkClick}>
+                                <NavLink to="/pratiques-musicales" className={activeClass} onClick={handleLinkClick}>
                                     Pratiques musicales
                                 </NavLink>
                             </li>

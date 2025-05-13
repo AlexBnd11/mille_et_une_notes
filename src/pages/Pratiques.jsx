@@ -25,7 +25,7 @@ export default function Pratiques() {
                     <section className="pratiques__instruments">
                         <h2>Les instruments</h2>
                         <ul>
-                            <li style={{listStyleType: 'none'}}>Basson français</li>
+                            <li>Basson français</li>
                             <li>Batterie</li>
                             <li>Clarinette</li>
                             <li>Contrebasse</li>
@@ -44,7 +44,7 @@ export default function Pratiques() {
                     <section className="pratiques__collectives">
                         <h2>Les pratiques collectives & ensembles</h2>
                         <ul>
-                            <li style={{listStyleType: 'none'}}>Ateliers jazz</li>
+                            <li>Ateliers jazz</li>
                             <li>Ateliers musiques actuelles</li>
                             <li>Chœur d'enfants</li>
                             <li>Ensemble de flûtes</li>
