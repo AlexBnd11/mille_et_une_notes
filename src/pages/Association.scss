@@ -62,10 +62,21 @@
             flex-direction: column;
             gap: 1.5rem;
 
-            h2 {
-                font-size: 1.6rem;
+            p {
+                font-size: 1.05rem;
             }
-            
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 0.4rem;
+                    color: #333333;
+                    list-style: inside;
+                }
+            }
         }
 
         @media (max-width: 1024px) {
@@ -90,20 +101,37 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 5rem;
+        margin: 5rem 5rem 0 5rem;
 
         @media (max-width: 500px) {
             margin: 2rem;
+        }
+
+        &__mot {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            h2 {
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            
+            p {
+                font-style: italic;
+                font-size: 1.05rem;
+            }
         }
 
         h3 {
             font-size: 2rem;
             font-weight: 600;
             text-align: center;
-            margin-bottom: 2rem;
+            margin: 2rem 0;
         }
 
-        &-ressources {
+        &__ressources {
             display: flex;
             flex-direction: column;
             gap: 1rem;
