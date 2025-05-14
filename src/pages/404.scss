@@ -55,7 +55,6 @@
         transition: all 0.3s ease;
         
         &:hover {
-            background-color: darken(#774C21, 10%);
             transform: translateY(-3px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }

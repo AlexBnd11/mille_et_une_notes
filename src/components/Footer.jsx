@@ -1,5 +1,5 @@
 import './Footer.scss';
-import Logo from '../assets/school_logo.png';
+import Logo2 from '../assets/school_logo_2.png';
 
 export default function Footer() {
     return (
@@ -20,7 +20,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="footer__logo">
-                <img src={Logo} alt="Logo de l'école" />
+                <img src={Logo2} alt="Logo de l'école" />
             </div>
         </footer>
     )
