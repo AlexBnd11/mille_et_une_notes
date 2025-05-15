@@ -10,6 +10,8 @@ import Studio from './pages/Studio';
 import Agenda from './pages/Agenda';
 import Pratiques from './pages/Pratiques';
 import NotFound from './pages/404';
+import MentionsLegales from './pages/MentionsLegales';
+
 // Components
 import Nav from './components/Nav';
 import Footer from './components/Footer';
@@ -28,6 +30,7 @@ export default function App() {
             <Route path="/agenda" element={<Agenda />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/studio" element={<Studio />} />
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
