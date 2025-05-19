@@ -3,7 +3,7 @@ import Tourtillere2 from '../assets/tourtillere_2.jpg';
 import { useEffect } from 'react';
 import './Association.scss';
 import PageLayout from '../components/PageLayout';
-
+import ReglementInterieur from '../assets/reglement_interieur.pdf';
 export default function Association() {
     useEffect(() => {
         document.title = 'Association - Mille et une notes';
@@ -81,8 +81,8 @@ export default function Association() {
 
                 <h3>Ressources</h3>
                 <div className="association__content_3__ressources">
-                    <a href="">Dernier compte-rendu du CA</a>
-                    <a href="">Règlement intérieur</a>
+                    <a href="https://drive.google.com/drive/folders/1yQ0--jonVgEPLXqJcO4cI5w5_p-91w52?usp=sharing">Derniers comptes-rendus du CA</a>
+                    <a href={ReglementInterieur} target="_blank" rel="noopener noreferrer">Règlement intérieur</a>
                 </div>
             </div>
             </PageLayout>

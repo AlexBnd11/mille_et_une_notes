@@ -41,7 +41,7 @@ export default function Contact() {
                             </tr>
                             <tr>
                                 <td>Mercredi</td>
-                                <td>10h - 12h / 13h30 - 18h</td>
+                                <td>10h30 - 13h / 14h - 18h</td>
                             </tr>
                             <tr>
                                 <td>Jeudi</td>
@@ -49,7 +49,7 @@ export default function Contact() {
                             </tr>
                             <tr>
                                 <td>Vendredi</td>
-                                <td>14h30 - 18h</td>
+                                <td>15h - 17h</td>
                             </tr>
                         </tbody>
                     </table>
