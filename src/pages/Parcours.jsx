@@ -31,7 +31,7 @@ export default function Parcours() {
                 <Square_Parcours
                     text="Dans cet atelier collectif, les enfants vont découvrir, toucher, jouer de tous les instruments enseignés à l'école, avec également une introduction à l'orchestre."
                     backgroundImage={background_labo}
-                    tag="6-10 ans"
+                    tag="6-7 ans"
                     title="Le labo"
                     subtitle="1 heure par semaine"
                 />

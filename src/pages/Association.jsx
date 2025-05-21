@@ -62,8 +62,7 @@ export default function Association() {
                         jazz, l'aménagement du studio d'enregistrement, la programmation des stages de cordes et de rap
                         pour la saison 2025-2026, l'instauration d'un « mois découverte » en juin, mais encore un
 
-                        partenariat avec l'ensemble tango « Las del Mar », une convention signée avec l'harmonie Sainte-
-                        Cécile, l'ouverture d'une classe-orchestre avec l'école élémentaire de Puilboreau, des actions
+                        partenariat avec l'ensemble tango « Las del Mar », l'ouverture d'une classe-orchestre avec l'école élémentaire de Puilboreau, des actions
 
                         musicales au sein de la médiathèque... La liste est déjà longue et nous avons encore plein d'idées !
                     </p>
