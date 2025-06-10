@@ -3,7 +3,7 @@ import './Contact.scss';
 import phone from '../assets/icon_phone.png';
 import email from '../assets/icon_email.png';
 import location from '../assets/icon_location.svg';
-import tableau_tarifs from '../assets/tarifs-tableau.png';
+import tableau_tarifs from '../assets/tarifs-tableau.jpg';
 import PageLayout from '../components/PageLayout';
 
 export default function Contact() {
