@@ -16,7 +16,7 @@ export default function Footer() {
                 </div>
                 
                 <div className="footer__credits">
-                    <p>© {new Date().getFullYear()} - Réalisation : <a href="https://alexbonniard.dev" target="_blank" rel="noopener noreferrer">Alex Bonniard</a></p>
+                    <p>© {new Date().getFullYear()} - Réalisation : <a href="https://weberria.fr/" target="_blank" rel="noopener noreferrer">Weberria</a></p>
                 </div>
             </div>
             <div className="footer__logo">
