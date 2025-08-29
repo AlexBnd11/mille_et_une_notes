@@ -28,7 +28,7 @@ export default function Accueil() {
                 <h1>Mille et une notes <br /> École de musique de Puilboreau</h1>
                 <address>
                     Domaine de la Tourtillère<br />
-                    Lundi-vendredi : 14h30 - 18h30<br />
+                    Lundi-vendredi : 14h30 - 18h<br />
                     Mercredi : 10h-12h30 / 13h30-18h
                 </address>
                 <img src={backgroundNotes} alt="background notes" className='hero-section__notes_1' />

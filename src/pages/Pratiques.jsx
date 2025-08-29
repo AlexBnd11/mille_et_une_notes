@@ -47,12 +47,14 @@ export default function Pratiques() {
                             <li>Ateliers jazz</li>
                             <li>Ateliers musiques actuelles</li>
                             <li>Chœur d'enfants</li>
+                            <li>Chœur adultes</li>
                             <li>Ensemble de flûtes</li>
                             <li>Ensemble de violoncelles</li>
                             <li>Jazz band</li>
                             <li>Musique de chambre</li>
                             <li>Orchestre de chambre</li>
                             <li>Orchestre d'harmonie Cycle I & II</li>
+                            <li>Orchestre tango argentin</li>
                             <li>Solfège</li>
                             <li>Stages jazz vocal</li>
                         </ul>
